@@ -1,6 +1,5 @@
 package com.alexlyxy.alextroikaone.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,30 +15,26 @@ class DoCoWeAdapter : ListAdapter<DoCoWeModel, DoCoWeAdapter.Holder>(Comparator(
         private val binding = ListItemBinding.bind(view)
         private var itemDoCoWe: DoCoWeModel? = null
 
-        /* init {
-             itemView.setOnClickListener {
-                 itemDoCoWe?.let { it1 -> listener?.onClick(it1) }
-             }
-         } */
-
         fun bind(item: DoCoWeModel) = with((binding)) {
             itemDoCoWe = item
 
             //DOG:
-            //Picasso.get().load(item.dogFaceOne).into(ivDogOne)
-            //Picasso.get().load(item.dogFaceTwo).into(ivDogTwo)
-            //Picasso.get().load(item.dogFaceThree).into(ivDogThree)
+            Picasso.get().load(item.dogFaceOne).into(ivDogOne)
+            Picasso.get().load(item.dogFaceTwo).into(ivDogTwo)
+            Picasso.get().load(item.dogFaceThree).into(ivDogThree)
 
             //COIN:
             tvCName.text = item.coinName
             tvCFullName.text = item.coinFullName
             Picasso.get()
-                .load("https://min-api.cryptocompare.com" + item.coinUrl + item.coinImageUrl)
+                .load("https://cdn.pixabay.com/photo/2019/04/15/20/42/bitcoin-4130299_1280.png")
                 .into(ivCoin)
-            // Picasso.get().load  (  "https://cdn.pixabay.com/photo/2019/04/15/20/42/bitcoin-4130299_1280.png").into(ivCoin)
+            //Picasso.get()
+            // .load("https://min-api.cryptocompare.com" + item.coinUrl + item.coinImageUrl)
+            // .into(ivCoin)
             // "https://cdn.pixabay.com/photo/2019/04/15/20/42/bitcoin-4130299_1280.png"
-            val coinUrl = "https://min-api.cryptocompare.com" + item.coinUrl + item.coinImageUrl
-            Log.d("MyLog", "CoinUrl: $coinUrl")
+            //val coinUrl = "https://min-api.cryptocompare.com" + item.coinUrl + item.coinImageUrl
+            //Log.d("MyLog", "CoinUrl: $coinUrl")
 
             //WEATHER:
             tvHoursDate.text = item.time

@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/ivDogOne"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:scaleType="fitXY"
@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/ivDogTwo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:scaleType="fitXY"
@@ -35,8 +35,8 @@
 
     <ImageView
         android:id="@+id/ivDogThree"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:scaleType="fitXY"

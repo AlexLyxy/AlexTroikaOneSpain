@@ -6,7 +6,6 @@ data class DoCoWeModel(
    val dogFaceThree: String,
     val coinName: String,
     val coinFullName: String,
-    val coinUrl: String,
     val coinImageUrl: String,
      val time: String,
      val condition: String,
