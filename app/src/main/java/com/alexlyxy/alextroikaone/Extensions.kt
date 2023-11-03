@@ -66,6 +66,8 @@ fun parseCoin(mainObjectCoin: JSONObject): List<DoCoWeModel> {
     )
     listCoin.add(item)
     Log.d("MyLog", "CoinListLast: $item")
+    Log.d("MyLog", "CoinArray: $coinArray")
+
     return listCoin
 }
 
